@@ -22,8 +22,10 @@ run `simple_sampling/error.py` to show error in different algorithms. The  resul
 
 ## EX2：Robustness and Convergence in simple model
 run `simple_net/easy_net_mcmc.ipynb` to show the convergence in simple model. The  result is shown in [par.pdf](https://github.com/guifengye1/PMP-MCMC/blob/main/simple_net/par.pdf).
+![在这里插入图片描述](https://img-blog.csdnimg.cn/831c8c7f3c164b399d0b20b3f86dbc3d.png)
 
 run `simple_net/lb.py` to show the robustness in simple model. The  result is shown in [lb.pdf](https://github.com/guifengye1/PMP-MCMC/blob/main/simple_net/lb.pdf).
+![在这里插入图片描述](https://img-blog.csdnimg.cn/aafb9de61dc04975a541175ad13c9764.png)
 
 ## EX3：correlation
 We performed an investigation on the correlation between PMP-MCMC and the model's dimension d, chain length C, and prefetch depth D. Our study consisted of 125 tuples (d, D, C) with d ranging from 10 to 50, C ranging from 50 to 250, and D ranging from 1 to 5.
@@ -86,7 +88,7 @@ python ./complex_nets/Mnist/FC/MP_LSTM.py
 python ./complex_nets/Mnist/FC/PMP_LSTM.py
 ```
 The  result is shown in /complex_nets/Mnist/[result.png](https://github.com/guifengye1/PMP-MCMC/blob/main/complex_nets/Mnist/result.png).
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/4c6d6665ea264fae8d818b7b49e34dc0.png)
 ### Convergence
 ```train
 python ./complex_nets/Cifar-10/cifar_MPhmc.py
@@ -94,6 +96,9 @@ python ./complex_nets/Cifar-10/cifar_PMPhmc.py
 python ./complex_nets/Cifar-10/cifar_SPhmc.py
 ```
 The  result is shown in /complex_nets/Cifar-10/[result.png](https://github.com/guifengye1/PMP-MCMC/blob/main/complex_nets/Cifar-10/result.png).
+
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/135e72bfbd48423f8fc4f9d402f9376c.png)
 
 ## Pre-trained Models
 
