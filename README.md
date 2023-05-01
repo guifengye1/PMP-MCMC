@@ -103,6 +103,7 @@ The  result is shown in /complex_nets/Cifar-10/[result.png](https://github.com/g
 ## Pre-trained Models
 
 You can download pretrained models here:
+
 cifar
 - [cifar.pkl
 ](https://github.com/guifengye1/PMP-MCMC/blob/main/complex_nets/Cifar-10/cifar.pkl)
