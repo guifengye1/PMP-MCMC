@@ -17,7 +17,7 @@ pip install --upgrade tensorflow-probability
 ```
 
 
-
+Note: '.cu' files to run on NVIDIA Tesla A100.
 
 
 
