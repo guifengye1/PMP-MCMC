@@ -21,8 +21,7 @@ Note: `.cu` files to run on NVIDIA Tesla A100.
 
 
 
-## EX1：Effective Sample Size (Ess）and Error 
-
+## EX1：sampling from distribution
 
 run `simple_sampling/error.py` to show error in different algorithms. The  result is shown in [error.pdf](https://github.com/guifengye1/PMP-MCMC/blob/main/simple_sampling/error/error.pdf).
 
