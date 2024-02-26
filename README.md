@@ -17,21 +17,34 @@ pip install --upgrade tensorflow-probability
 ```
 
 
-Note: '.cu' files to run on NVIDIA Tesla A100.
+Note: `.cu` files to run on NVIDIA Tesla A100.
 
 
 
 ## EX1：Effective Sample Size (Ess）and Error 
-run `simple_sampling/ESS/ess.py` to show ess in different algorithms. The  result is shown in [ess.pdf](https://github.com/guifengye1/PMP-MCMC/blob/main/simple_sampling/ESS/ess.pdf).
+
 
 run `simple_sampling/error.py` to show error in different algorithms. The  result is shown in [error.pdf](https://github.com/guifengye1/PMP-MCMC/blob/main/simple_sampling/error/error.pdf).
+![](https://img-blog.csdnimg.cn/direct/ad973b8ec90f4e97a84f5b1ca7a827f5.png)
 
+Use SP-MCMC, MH-MCMC, and PMP-MCMC to sample from the banana distribution. The sampling effect is as follows:[banana.pdf](https://github.com/guifengye1/PMP-MCMC/tree/main/simple_sampling/error/banana/bananav3.pdf)
+![](https://img-blog.csdnimg.cn/direct/0ff4559140704ffa92751ab90efd5065.png)
 ## EX2：Robustness and Convergence in simple model
-run `simple_net/easy_net_mcmc.ipynb` to show the convergence in simple model. The  result is shown in [par.pdf](https://github.com/guifengye1/PMP-MCMC/blob/main/simple_net/par.pdf).
-![](https://img-blog.csdnimg.cn/831c8c7f3c164b399d0b20b3f86dbc3d.png)
-
+### Robustness
 run `simple_net/lb.py` to show the robustness in simple model. The  result is shown in [lb.pdf](https://github.com/guifengye1/PMP-MCMC/blob/main/simple_net/lb.pdf).
 ![](https://img-blog.csdnimg.cn/aafb9de61dc04975a541175ad13c9764.png)
+### Time_analysis
+We analyzed the acceleration effect of different complex problems, taking the data size of 500 and 100,000 as examples.
+![](https://img-blog.csdnimg.cn/direct/bdb9d2bba3104066bd804f2efa6f54cb.png)
+### Comparison of convergence speed of PMP, MP and SP
+![](https://img-blog.csdnimg.cn/direct/17f9dd2fcad34193ac4f106e6462f0bf.png)
+### Detailed analysis of PMP and MP convergence speed 
+Comparison of convergence speeds of PMP and MP under different degrees of parallelism
+![image](https://github.com/guifengye1/PMP-MCMC/assets/66373832/e7aad937-2c28-4da2-baa1-6047d1c6a106)
+
+### ESS/s and MSJD/s
+![image](https://github.com/guifengye1/PMP-MCMC/assets/66373832/e97b1c78-b57d-49be-939d-51bf1bf92456)
+
 
 ## EX3：correlation
 We performed an investigation on the correlation between PMP-MCMC and the model's dimension d, chain length C, and prefetch depth D. Our study consisted of 125 tuples (d, D, C) with d ranging from 10 to 50, C ranging from 50 to 250, and D ranging from 1 to 5.
