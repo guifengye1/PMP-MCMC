@@ -25,6 +25,7 @@ Note: `.cu` files to run on NVIDIA Tesla A100.
 
 
 run `simple_sampling/error.py` to show error in different algorithms. The  result is shown in [error.pdf](https://github.com/guifengye1/PMP-MCMC/blob/main/simple_sampling/error/error.pdf).
+
 ![](https://img-blog.csdnimg.cn/direct/ad973b8ec90f4e97a84f5b1ca7a827f5.png)
 
 Use SP-MCMC, MH-MCMC, and PMP-MCMC to sample from the banana distribution. The sampling effect is as follows:[banana.pdf](https://github.com/guifengye1/PMP-MCMC/tree/main/simple_sampling/error/banana/bananav3.pdf)
@@ -35,7 +36,17 @@ run `simple_net/lb.py` to show the robustness in simple model. The  result is sh
 ![](https://img-blog.csdnimg.cn/aafb9de61dc04975a541175ad13c9764.png)
 ### Time_analysis
 We analyzed the acceleration effect of different complex problems, taking the data size of 500 and 100,000 as examples.
-![](https://img-blog.csdnimg.cn/direct/bdb9d2bba3104066bd804f2efa6f54cb.png)
+|Algorithm| Data size |Number of recommendations & number of cores |GPU run time per iteration : μs|Additional overhead time (host data processing + host and device dada transmission):μs|
+| ------------------ |---------------- | -------------- |------------------ |------------------ |
+| MP   |500| 4  | 157.505| 115.84
+|MP| 500 | 1024 |452.258 | 1066.212
+|MP| 100000 | 4 | 33465.447 | 346.528
+|MP |100000 | 1024 | 33473.53|1099.258
+| PMP   |500| 4  | 156.927| 65.952
+|PMP| 500 | 1024 |177.952| 1289.7
+|PMP| 100000 | 4 | 40259.869 | 538.464
+|PMP |100000 | 1024 | 42096.793|2041.279
+ 
 ### Comparison of convergence speed of PMP, MP and SP
 ![](https://img-blog.csdnimg.cn/direct/17f9dd2fcad34193ac4f106e6462f0bf.png)
 ### Detailed analysis of PMP and MP convergence speed 
