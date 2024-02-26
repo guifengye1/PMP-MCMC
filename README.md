@@ -142,6 +142,7 @@ Mnist
 - [FC](https://github.com/guifengye1/PMP-MCMC/blob/main/complex_nets/Mnist/FC/FC_model.pkl) 
 - [LSTM](https://github.com/guifengye1/PMP-MCMC/blob/main/complex_nets/Mnist/LSTM/LSTM_model.pkl)
 - [CNN](https://github.com/guifengye1/PMP-MCMC/tree/main/complex_nets/Mnist/CNN)
+  
 bnnMnist
 - [model](https://github.com/guifengye1/PMP-MCMC/blob/main/complex_nets/Bayesian%20Network%20Training/bnn_mnist.pth)
 
