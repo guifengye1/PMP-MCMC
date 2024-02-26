@@ -8,7 +8,7 @@ import random
 import pandas as pd
 
 
-N = 50
+N = 100000
 beta0 = torch.tensor([-1.0])
 beta_true = torch.tensor([2.0])
 sigma_true = torch.tensor([0.5])
