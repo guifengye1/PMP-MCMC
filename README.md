@@ -18,7 +18,8 @@ pip install --upgrade tensorflow-probability
 
 
 Note: `.cu` files to run on NVIDIA Tesla A100.
-
+## Algorithm architecture
+![image](https://github.com/guifengye1/PMP-MCMC/assets/66373832/6ad254be-eb5d-49ab-9383-93e26198f424)
 
 
 ## EX1：sampling from distribution
