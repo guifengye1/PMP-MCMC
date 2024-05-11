@@ -1,7 +1,7 @@
 # A Prefetching Multi-Proposal Parallel MCMC Algorithm
 
-This repository is the official implementation of [A Prefetching Multi-Proposal Parallel MCMC Algorithm]() . 
-
+This repository is the official implementation of  
+[Ye, G., & Lu, S. (2024). A Prefetching Multiple Proposals Markov Chain Monte Carlo Algorithm. IEEE Transactions on Artificial Intelligence, 1(01), 1-13.](https://doi.ieeecomputersociety.org/10.1109/TAI.2024.3385384)
 
 
 ## Requirements
